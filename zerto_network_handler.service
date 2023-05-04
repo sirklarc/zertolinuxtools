@@ -1,0 +1,9 @@
+[Unit]
+Description=Zerto Tools For Linux network handler for RHEL and Centos
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/sbin/zerto_network_handler start
+ExecStop=/usr/sbin/zerto_network_handler stop
